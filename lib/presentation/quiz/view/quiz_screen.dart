@@ -272,15 +272,19 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               onPressed: () => viewModel.submitAnswer(true),
               style: FilledButton.styleFrom(
                 backgroundColor: Colors.blue,
+                padding: EdgeInsets.zero,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
-              child: const Text(
-                'O',
-                style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
+              child: const Center(
+                child: Text(
+                  'O',
+                  style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                    height: 1.0,
+                  ),
                 ),
               ),
             ),
@@ -294,15 +298,19 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               onPressed: () => viewModel.submitAnswer(false),
               style: FilledButton.styleFrom(
                 backgroundColor: Colors.red,
+                padding: EdgeInsets.zero,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
-              child: const Text(
-                'X',
-                style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
+              child: const Center(
+                child: Text(
+                  'X',
+                  style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                    height: 1.0,
+                  ),
                 ),
               ),
             ),
